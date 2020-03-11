@@ -1,0 +1,48 @@
+.DadJoke__joke{
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px ridge rgb(214, 214, 214);
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+    
+}
+.DadJoke__joke:hover{
+    animation: jiggle 0.2s;
+    transition: .4s all ease;
+}
+.DadJokeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+h3 {
+    padding-left: 50px;
+}
+body {
+    background-color: black;
+}
+.title{
+    color: whitesmoke;
+    text-align: center;
+}
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    33% {
+        transform: rotate(1deg) scale(1.0);
+        opacity: 0.75;
+    }
+    66% {
+        transform: rotate(-1deg) scale(1.0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
